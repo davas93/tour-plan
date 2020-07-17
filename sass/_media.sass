@@ -2,9 +2,9 @@
   .container
     max-width: 960px
 @media ( max-width: 992px)
+  .container
+    max-width: 91.5%
   .navbar
-    .container
-      max-width: 91.5%
     &-top
       padding: 30px 0
     &__search
@@ -43,6 +43,26 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .stars
+    flex-basis: auto
+  .hotel
+    padding-top: 5px
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+      &__descr
+        max-width: 280px
+      &__rating
+        display: none
+      &__offer
+        order: -1
+        margin-left: 0
 @media ( max-width: 576px)
   .logo
     width: 99px
