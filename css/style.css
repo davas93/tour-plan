@@ -631,6 +631,7 @@ template {
   background-position: center;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
 }
 
 .slider-button--prev {
