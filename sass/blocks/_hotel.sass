@@ -21,6 +21,9 @@
     margin: 0
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between
 .stars
   flex-basis: 100%
 .offer
@@ -63,10 +66,10 @@
     height: 100%
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
 .swiper-slide
-  object-fit: cover
   &__image
     width: 100%
     height: 100%
+    object-fit: cover
 .slider
   width: 728px
   &-button
@@ -90,4 +93,77 @@
       right: 0
       transform: translateY(-50%)
       background-image: url(../img/hotel/arrow-next.svg)
+.booking-wrap
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+.booking
+  padding: 28px
+  width: 350px
+  font-family: "Nunito", sans-serif
+  color: $light
+  background-color: $dark
+  border-radius: 8px
+  &__info
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 9px
+  &__price
+    display: flex
+    flex-direction: column
+  &__start-price
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-size: 12px
+    line-height: 16px
+  &__room
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-top: 4px
+    min-height: 40px
+    font-size: 12px
+    line-height: 16px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    min-width: 80px
+  &__button
+    width: 100%
+    min-height: 45px
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    border-radius: 4px
+.call-center
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 17px
+  &__text
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__phone-number
+    display: flex
+    align-items: center
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    color: inherit
+  &__number
+    margin-left: 8px
+.map
+  width: 347px
+  height: 213px
+  background-color: #000000
+  border-radius: 10px
+  
 
