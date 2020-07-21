@@ -567,6 +567,8 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .stars {
@@ -612,7 +614,7 @@ template {
 .swiper-container {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -637,6 +639,7 @@ template {
 
 .slider {
   width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -805,8 +808,8 @@ template {
 }
 
 .map {
-  width: 347px;
-  height: 213px;
+  width: 350px;
+  height: 215px;
   background-color: #000000;
   border-radius: 10px;
 }
@@ -815,20 +818,26 @@ template {
   .container {
     max-width: 960px;
   }
+  .slider {
+    width: 600px;
+  }
+  .booking {
+    width: 340px;
+  }
+  .map {
+    width: 340px;
+  }
 }
 
 @media (max-width: 992px) {
   .container {
-    max-width: 91.5%;
+    max-width: 700px;
   }
   .navbar-top {
     padding: 30px 0;
   }
   .navbar__search {
     margin: auto;
-  }
-  .navbar-bottom .container {
-    max-width: 87.5%;
   }
   .navbar-menu {
     padding: 22.5px 0;
@@ -842,6 +851,17 @@ template {
   }
   .search {
     width: 340px;
+  }
+  .slider {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .booking-wrap {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -912,11 +932,35 @@ template {
             order: -1;
     margin-left: 0;
   }
+  .slider {
+    height: 350px;
+    margin-bottom: 20px;
+  }
+  .booking {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .booking-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .map {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    height: 179px;
+  }
+  .map {
+    height: 172px;
   }
 }
 /*# sourceMappingURL=style.css.map */
