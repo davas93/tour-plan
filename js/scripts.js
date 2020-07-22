@@ -1,4 +1,5 @@
-var mySwiper = new Swiper(".hotel-slider", {
+//Слайдер для hotel
+var hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -47,5 +48,25 @@ ymaps.ready(function () {
     );
   myMap.geoObjects.add(myPlacemark);
 });
+
 //Cоздание parallax эффекта newsletter
 $(".newsletter").parallax({ imageSrc: "/img/newsletter/newsletter-bg.jpg" });
+
+//Слайдер для reviews
+var reviewsSlider = new Swiper(".reviews-slider", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
+  },
+
+  //Keyboard control
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
