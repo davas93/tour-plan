@@ -30,7 +30,6 @@ ymaps.ready(function () {
         searchControlProvider: "yandex#search",
       }
     ),
-    // Создаём макет содержимого.
     MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
       '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
     ),
@@ -40,17 +39,13 @@ ymaps.ready(function () {
         hintContent: "Grand Hilton Hotel",
       },
       {
-        // Опции.
-        // Необходимо указать данный тип макета.
         iconLayout: "default#image",
-        // Своё изображение иконки метки.
         iconImageHref: "js/location-icon.svg",
-        // Размеры метки.
         iconImageSize: [40, 52],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
         iconImageOffset: [-25, -40],
       }
     );
   myMap.geoObjects.add(myPlacemark);
 });
+//Cоздание parallax эффекта newsletter
+$(".newsletter").parallax({ imageSrc: "/img/newsletter/newsletter-bg.jpg" });

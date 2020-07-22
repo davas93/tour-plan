@@ -513,7 +513,7 @@ template {
 }
 
 .hotel {
-  padding: 23px 0 20px 0;
+  padding: 23px 0 70px 0;
 }
 
 .hotel-info {
@@ -823,7 +823,7 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background: url(../img/newsletter/newsletter-bg.jpg) no-repeat center;
+  background: transparent;
   background-size: cover;
 }
 
@@ -914,6 +914,9 @@ template {
 }
 
 @media (max-width: 992px) {
+  .hotel {
+    padding-bottom: 60px;
+  }
   .container, .newsletter-wrapper {
     max-width: 700px;
   }
@@ -950,6 +953,9 @@ template {
 }
 
 @media (max-width: 767px) {
+  .hotel {
+    padding-bottom: 40px;
+  }
   .container {
     max-width: 92%;
   }
