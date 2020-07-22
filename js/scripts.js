@@ -44,7 +44,7 @@ ymaps.ready(function () {
         // Необходимо указать данный тип макета.
         iconLayout: "default#image",
         // Своё изображение иконки метки.
-        iconImageHref: "../img/hotel/location-icon.svg",
+        iconImageHref: "js/location-icon.svg",
         // Размеры метки.
         iconImageSize: [40, 52],
         // Смещение левого верхнего угла иконки относительно
