@@ -8,7 +8,7 @@
   .map
     width: 340px
 @media ( max-width: 992px)
-  .container
+  .container, .newsletter-wrapper
     max-width: 700px
   .navbar
     &-top
@@ -82,6 +82,13 @@
       flex-wrap: wrap
   .map
     width: 100%
+  .newsletter
+    &-wrapper
+      width: 92%
+      flex-direction: column
+      align-items: flex-start
+    &-title
+      margin-bottom: 37px
 @media ( max-width: 576px)
   .logo
     width: 99px
@@ -90,5 +97,18 @@
     height: 179px
   .map
     height: 172px
+  .newsletter
+    padding: 76px 0 83px 0
+    &-title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+  .subscribe
+    width: 100%
+
   
   
