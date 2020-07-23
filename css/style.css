@@ -913,6 +913,7 @@ template {
 
 .reviews__title {
   margin-bottom: 70px;
+  margin-top: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
@@ -1036,6 +1037,7 @@ template {
 }
 
 .reviews-slider__text {
+  margin: 0;
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
@@ -1081,7 +1083,6 @@ template {
   position: relative;
   width: 255px;
   height: 255px;
-  padding: 27px;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -1136,6 +1137,10 @@ template {
   .map {
     width: 340px;
   }
+  .card {
+    width: 230px;
+    height: 230px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1177,6 +1182,18 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .activities {
+    padding-bottom: 70px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    width: 340px;
+    height: 255px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1278,6 +1295,9 @@ template {
   .newsletter-title {
     margin-bottom: 37px;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
   .reviews-slider__item {
     padding: 0 30px 36px 30px;
   }
@@ -1299,11 +1319,29 @@ template {
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
+  .card {
+    width: 48%;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .reviews {
+    padding-bottom: 0;
+  }
+  .activities {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  .activities__title {
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .card {
+    width: 100%;
   }
 }
 
