@@ -834,6 +834,8 @@ template {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(10, 34, 61, 0.8);
@@ -872,13 +874,17 @@ template {
 .subscribe {
   position: relative;
   width: 350px;
-  height: 55px;
+  min-height: 55px;
   border-radius: 4px;
   overflow: hidden;
 }
 
 .subscribe__input {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   padding-left: 33px;
@@ -893,7 +899,8 @@ template {
   position: absolute;
   top: 0;
   right: 0;
-  width: 65px;
+  bottom: 0;
+  min-width: 65px;
   height: 100%;
   font-weight: 700;
   font-size: 12px;
@@ -1032,6 +1039,88 @@ template {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
+}
+
+.activities {
+  padding: 60px 0 98px 0;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activities__title {
+  margin-bottom: 57px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.activities__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card {
+  position: relative;
+  width: 255px;
+  height: 255px;
+  padding: 27px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card__title {
+  position: absolute;
+  z-index: 2;
+  bottom: 72px;
+  left: 25px;
+  max-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.card__button {
+  position: absolute;
+  z-index: 2;
+  bottom: 24px;
+  left: 26px;
+  padding: 7px 22px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
 }
 
 @media (max-width: 1200px) {

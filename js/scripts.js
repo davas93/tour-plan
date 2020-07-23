@@ -50,7 +50,7 @@ ymaps.ready(function () {
 });
 
 //Cоздание parallax эффекта newsletter
-$(".newsletter").parallax({ imageSrc: "/img/newsletter/newsletter-bg.jpg" });
+$(".newsletter").parallax({ imageSrc: "img/newsletter/newsletter-bg.jpg" });
 
 //Слайдер для reviews
 var reviewsSlider = new Swiper(".reviews-slider", {
