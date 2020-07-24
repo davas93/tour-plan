@@ -11,6 +11,13 @@
   .card
     width: 230px
     height: 230px
+  .package
+    &:first-child
+      .package
+        &__old-price
+          margin-top: 24px
+        &__descr
+          margin-bottom: 24px
 @media ( max-width: 992px)
   .hotel
     padding-bottom: 60px
@@ -48,6 +55,11 @@
       width: 340px
       height: 255px
       margin-bottom: 20px
+  .packages-wrapper
+    grid-template: 1fr 1fr 1fr / 1fr 1fr
+  .package
+    &:first-child
+      grid-column: 1 / 3
 @media ( max-width: 767px)
   .hotel
     padding-bottom: 40px
@@ -128,6 +140,24 @@
           transform: translate(50%, 0)
   .card
     width: 48%
+  .packages-wrapper
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr
+    grid-auto-rows: min-content
+    column-gap: 0
+    row-gap: 20px
+  .package
+    grid-template-rows: 350px 1fr
+    &__info
+      padding: 30px 21px 30px 44px
+    &__image
+    &:first-child
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr 1fr
+      grid-column: 1 / 2
+      .package
+        &__image
+          max-height: 350px
 @media ( max-width: 576px)
   .logo
     width: 99px
@@ -168,6 +198,21 @@
       margin-bottom: 42px
       font-size: 18px
       line-height: 23px
-
+  .packages
+    padding-top: 0
+    &__title
+      margin-bottom: 42px
+      font-size: 18px
+      line-height: 23px
+  .package
+    grid-template-rows: 250px 1fr
+    &__info
+      padding-left: 21px
+    &:first-child
+      .package
+        &__info
+          padding-left: 21px
+        &__image
+          max-height: 250px
 
 
