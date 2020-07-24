@@ -47,6 +47,7 @@ ymaps.ready(function () {
       }
     );
   myMap.geoObjects.add(myPlacemark);
+  myMap.behaviors.disable("scrollZoom");
 });
 
 //Cоздание parallax эффекта newsletter
