@@ -1,4 +1,7 @@
 .navbar
+  position: fixed
+  z-index: 20
+  width: 100%
   background-color: $light
   &-top
     display: flex
@@ -19,7 +22,9 @@
     margin: 0
     padding: 31px 0
     list-style-type: none
+    transition: 0.3s
     &__link
+      font-weight: 700
       font-size: 14px
       line-height: 18px
       color: $light

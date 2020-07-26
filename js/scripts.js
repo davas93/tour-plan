@@ -71,3 +71,29 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: false,
   },
 });
+
+//Создание мобильного меню
+$(init);
+
+function autoAdaptiv() {
+  if ($(window).width() < 768) {
+    $(".navbar-menu").append($(".navbar-top>.search, .user"));
+    //Иначе все улетает обратно
+  } else {
+    $(".navbar-top").append($(".navbar-menu>.search, .user"));
+  }
+}
+
+function init() {
+  autoAdaptiv();
+
+  $(window).resize(() => autoAdaptiv());
+}
+//Появление/исчезание меню при нажатии
+$(".menu-button").on("click", function () {
+  $(".navbar-menu").toggleClass("navbar-menu--active");
+  $(".header-menu").toggleClass("header-menu_active");
+});
+$(".navbar-menu__item").on("click", function () {
+  $(".navbar-menu").removeClass("navbar-menu--active");
+});

@@ -374,6 +374,9 @@ template {
 }
 
 .navbar {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
   background-color: #ffffff;
 }
 
@@ -416,9 +419,12 @@ template {
   margin: 0;
   padding: 31px 0;
   list-style-type: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navbar-menu__link {
+  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -485,6 +491,10 @@ template {
   line-height: 18px;
 }
 
+.breadcrumb {
+  padding-top: 200px;
+}
+
 .breadcrumb-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,7 +502,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 18px 0;
+  padding: 219px 0 18px 0;
   margin: 0;
   list-style: none;
 }
@@ -1341,6 +1351,9 @@ template {
   .search {
     width: 340px;
   }
+  .breadcrumb-list {
+    padding-top: 190px;
+  }
   .booking-wrap {
     width: 100%;
     -webkit-box-orient: horizontal;
@@ -1386,8 +1399,64 @@ template {
   .container {
     max-width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
-    display: none;
+  .navbar {
+    z-index: 9999;
+  }
+  .navbar-menu {
+    position: absolute;
+    z-index: 10;
+    right: -100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 38px;
+    padding-right: 38px;
+    width: 100%;
+    background-color: #0A223D;
+  }
+  .navbar-menu--active {
+    right: 0;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .navbar__user {
+    margin-bottom: 27px;
+  }
+  .navbar__search {
+    margin-bottom: 39px;
+    max-width: 340px;
+  }
+  .user {
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #ffffff;
+  }
+  .user__name {
+    margin: 10px 0 0 0;
+  }
+  .search {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+    max-width: 340px;
+  }
+  .search__input {
+    width: 100%;
   }
   .menu-button {
     display: -webkit-box;
@@ -1414,6 +1483,9 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .breadcrumb-list {
+    padding-top: 96px;
   }
   .stars {
     -ms-flex-preferred-size: auto;

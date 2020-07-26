@@ -40,6 +40,9 @@
     width: 135px
   .search
     width: 340px
+  .breadcrumb
+    &-list
+      padding-top: 190px
   .booking-wrap
     width: 100%
     flex-direction: row
@@ -69,8 +72,41 @@
   .container
     max-width: 92%
   .navbar
-    &__search, &-menu, &__user
-      display: none
+    z-index: 9999
+    &-menu
+      position: absolute
+      z-index: 10
+      right: -100%
+      flex-direction: column
+      padding-left: 38px
+      padding-right: 38px
+      width: 100%
+      background-color: $dark
+      &--active
+        right: 0
+      &__item
+        margin-bottom: 20px
+      &__link
+        font-size: 12px
+        line-height: 15px
+    &__user
+      margin-bottom: 27px
+    &__search
+      margin-bottom: 39px
+      max-width: 340px
+  .user
+    order: -2
+    flex-direction: column
+    justify-content: center
+    color: $light
+    &__name
+      margin: 10px 0 0 0
+  .search
+    order: -1
+    width: 100%
+    max-width: 340px
+    &__input
+      width: 100%
   .menu
     &-button
       display: flex
@@ -87,6 +123,9 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .breadcrumb
+    &-list
+      padding-top: 96px
   .stars
     flex-basis: auto
   .hotel
