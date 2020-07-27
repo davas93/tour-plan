@@ -72,7 +72,7 @@
   .footer
     padding: 73px 0 33px 0
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
+      grid-template-columns: 1fr 1fr 1fr 20% 1fr 1fr
       grid-row-gap: 40px
     &__logo
       grid-row: 1 / 2
@@ -297,8 +297,10 @@
         grid-column: 1
     &__info
       flex-basis: 100%
+      order: 2
+      margin-bottom: 15px
     &__button
-      margin-bottom: 30px
+      order: 3
     &__title
       &--indent
         margin-bottom: 15px
