@@ -39,11 +39,10 @@
     line-height: 23px
     color: $light
     text-transform: uppercase
+    &--indent
+      margin-bottom: 34px
     &--inline
       margin: 0 43px 0 0
-  &__list
-    &:nth-child(5)
-      margin-left: auto
   &__ul
     padding: 0
     margin: 0
@@ -58,14 +57,13 @@
   &__icon-wrapper
     margin-right: 22px
   &__text
-    margin: 35px 0 22px 0
+    margin-bottom: 22px
     color: $footer-color-text
   &__link
     color: inherit
   &__input
     flex-basis: 48%
     padding: 0 23px 0 23px
-    margin-top: 34px
     margin-bottom: 15px
     height: 50px
     font-size: 12px
@@ -98,15 +96,20 @@
     line-height: 15px
     color: #E0E0E0
   &-bottom
-    display: flex
-    justify-content: flex-end
+    display: grid
+    grid-template: 1fr / 1fr 283px 1fr
     padding-top: 102px
+    &__text
+      display: flex
+      align-items: center
+      justify-content: space-between
+      grid-column: 2 / 3
     &__item
       font-size: 12px
       line-height: 15px
       color: $light
     &__icons
-      margin-left: 277px
+      justify-self: end
       width: 136px
   
 
