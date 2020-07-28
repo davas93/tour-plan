@@ -76,7 +76,7 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 $(init);
 
 function autoAdaptiv() {
-  if ($(window).width() < 768) {
+  if ($(window).outerWidth() < 768) {
     $(".navbar-menu").append($(".navbar-top>.search, .user"));
     //Иначе все улетает обратно
   } else {

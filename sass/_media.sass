@@ -167,6 +167,7 @@
       border: none
       background-color: $light
       cursor: pointer
+      outline: none
       &__line
         width: 16px
         height: 1px
@@ -359,4 +360,17 @@
         &__image
           max-height: 250px
 
+@media (max-height: 500px)
+  .navbar
+    &-menu
+      &--mobile
+        justify-content: flex-start
+        min-height: 100vh
+        flex-wrap: wrap
+      &__item
+        margin-bottom: 10px
+    &__user
+      display: none
+    &__search
+      display: none
 
