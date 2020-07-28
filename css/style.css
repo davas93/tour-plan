@@ -2111,7 +2111,7 @@ template {
   }
 }
 
-@media (max-height: 500px) {
+@media (max-height: 500px) and (max-width: 767px) {
   .navbar-menu--mobile {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
