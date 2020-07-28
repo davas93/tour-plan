@@ -46,9 +46,6 @@
     width: 135px
   .search
     width: 340px
-  .breadcrumb
-    &-list
-      padding-top: 190px
   .booking-wrap
     width: 100%
     flex-direction: row
@@ -119,15 +116,20 @@
   .container
     max-width: 92%
   .navbar
-    &-menu
-      position: absolute
-      z-index: 10
-      right: -100%
-      flex-direction: column
-      padding-left: 38px
-      padding-right: 38px
+    &--fixed
+      position: fixed
+      z-index: 99
       width: 100%
-      background-color: $dark
+    &-menu
+      &--mobile
+        position: absolute
+        z-index: 10
+        right: -100%
+        flex-direction: column
+        padding-left: 38px
+        padding-right: 38px
+        width: 100%
+        background-color: $dark
       &--active
         right: 0
       &__item
