@@ -105,6 +105,9 @@
         margin-top: 10px
     &__input
       flex-basis: 48%
+  .modal
+    &__dialog
+      width: 100%
         
 //Адаптив для экранов до 768
 @media ( max-width: 767px)
@@ -315,6 +318,10 @@
     &-bottom
       flex-wrap: wrap
       padding-top: 20px
+  .modal
+    &__dialog
+      max-width: 450px
+      padding: 33px 68px
 
 //Адаптив для экранов 480
 @media ( max-width: 480px)
@@ -359,6 +366,14 @@
           padding-left: 21px
         &__image
           max-height: 250px
+  .modal
+    &__dialog
+      width: 90%
+      padding: 33px 15px
+    &__info
+      width: 100%
+    &__button
+      margin-bottom: 10px
 
 @media (max-height: 500px) and (max-width: 767px)
   .navbar
@@ -373,3 +388,23 @@
       display: none
     &__search
       display: none
+  .modal
+    &__dialog
+      padding: 15px
+      height: 90%
+      width: 80%
+      max-height: 315px
+    &__form
+      width: 100%
+      height: 100%
+      align-items: flex-start
+    &__input
+      flex-basis: 48%
+      margin-bottom: 5px
+    &__message
+      flex-basis: 48%
+    &__button
+      margin-top: -95px
+    &__info
+      flex-basis: 100%
+      margin-top: -50px
