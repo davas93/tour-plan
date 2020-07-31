@@ -120,7 +120,11 @@
               Free
             </p>
           </div>
-          <div class="rating hotel-info__rating">
+          <div
+            data-toggle="modal"
+            data-href="#rating-modal"
+            class="rating hotel-info__rating"
+          >
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter"
               >4.5/<span class="rating_small">5</span></span
@@ -277,7 +281,11 @@
                 </a>
               </div>
               <!-- /.call-center -->
-              <button class="button booking__button">
+              <button
+                data-toggle="modal"
+                data-href="#booking-modal"
+                class="button booking__button"
+              >
                 View Other Options
               </button>
             </div>
@@ -1229,6 +1237,86 @@ quest"
       </div>
       <!-- /.container -->
     </footer>
+    <div class="modal" id="booking-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/modal/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--indent">
+          booking
+        </h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          /><input
+            type="tel"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="tel"
+            class="input modal__input"
+            placeholder="Email*"
+            name="mail"
+          />
+          <textarea
+            class="modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button type="submit" class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="rating-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/modal/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--indent">
+          Send us a feedback
+        </h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          /><input
+            type="tel"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="tel"
+            class="input modal__input"
+            placeholder="Email*"
+            name="mail"
+          />
+          <textarea
+            class="modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button type="submit" class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.5.0.min.js"></script>
     <script src="js/parallax.min.js"></script>
