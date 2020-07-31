@@ -38,6 +38,11 @@ input {
   outline: none;
 }
 
+.title-thanks {
+  margin: 0;
+  padding-top: 80px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

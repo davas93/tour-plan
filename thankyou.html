@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,600;0,700;1,600&family=Nunito:ital,wght@0,400;0,600;0,800;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=4168c4a5-41dc-41b6-83e1-e8b967b7959d&lang=ru_RU"></script>
+  <title>Best Tour Plan - Hotel Booking</title>
+</head>
+
+<body>
+  <header class="navbar navbar--fixed">
+    <div class="container">
+      <div class="navbar-top">
+        <a href="index.html" class="logo">
+          <img src="img/navbar/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
+        </a>
+
+        <form action="#" class="search navbar__search">
+          <input type="text" class="search__input" placeholder="Search Location" />
+          <button class="search__button">
+            <img src="img/navbar/search-icon.svg" alt="Icon: search" />
+          </button>
+        </form>
+
+        <a href="#" class="user navbar__user">
+          <img src="img/navbar/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
+          <span class="user__name">Nathan</span>
+        </a>
+        <!-- /.user -->
+
+        <button class="menu-button navbar-top__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+      </div>
+      <!-- /.navbar-top -->
+    </div>
+    <!-- /.container -->
+    <div class="navbar-bottom">
+      <div class="container">
+        <ul class="navbar-menu navbar-menu--mobile">
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">All Deals</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Hotels</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Activities</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Restaurants</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Events</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Rodrigues</a>
+          </li>
+        </ul>
+        <!-- /.navbar-menu -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.navbar-bottom -->
+  </header>
+  <nav class="breadcrumb">
+    <div class="container">
+      <div class="container">
+        <h1 class="title-thanks">Благодарим Вас за обращение!</h1>
+        <p>
+          На менеджер свяжется с Вами в течение 45 минут!
+        </p>
+      </div>
+      <!-- /.container -->
+  </nav>
+  <!-- /.breadcrumb -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <img src="img/footer/vertical-logo.svg" alt="Logo: Best Tour Plan" class="footer__logo" />
+        <div class="footer__list footer__categories">
+          <h3 class="footer__title">all categories</h3>
+          <ul class="footer__ul">
+            <li class="footer__item">
+              <a href="#" class="footer__link">All Deals</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Hotels</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Activities</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Spa Packages</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Hotel Day Packages</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Restaurants</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Fitness</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Rodrigues</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer__list -->
+        <div class="footer__list footer__additional">
+          <h3 class="footer__title">additional information</h3>
+          <ul class="footer__ul">
+            <li class="footer__item">
+              <a href="#" class="footer__link">About Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">How does it work?</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Frequently Asked Questions</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Deals.mu loyalty program</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Promote your Business on BTP</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer__list -->
+        <div class="footer__social-network">
+          <h3 class="footer__title footer__title--inline">Social Network</h3>
+          <div class="footer__social-links">
+            <a href="#" class="footer__link"><img src="img/footer/facebook-icon.svg" alt="Icon: facebook"
+                class="footer__icon" /></a>
+            <a href="#" class="footer__link"><img src="img/footer/youtube-icon.svg" alt="Icon: youtube"
+                class="footer__icon" /></a>
+            <a href="#" class="footer__link"><img src="img/footer/instagram-icon.svg" alt="Icon: instagram"
+                class="footer__icon" /></a>
+          </div>
+          <!-- /.footer__social-links -->
+        </div>
+        <!-- /.footer__social-networks -->
+        <div class="footer__list footer__legal">
+          <h3 class="footer__title">legal information</h3>
+          <ul class="footer__ul">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms & Conditions</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Disclaimer</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Cancellation policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer__list -->
+        <div class="footer__contact-details">
+          <h3 class="footer__title footer__title--indent">Contact Details</h3>
+          <p class="footer__text">
+            Feel free to contact us by phone, email or by our contact form
+          </p>
+          <ul class="footer__ul">
+            <li class="footer__item footer__item--indent">
+              <div class="footer__icon-wrapper">
+                <img src="img/footer/location-icon.svg" alt="Icon: location" />
+              </div>
+              9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+              States
+            </li>
+            <li class="footer__item footer__item--indent">
+              <div class="footer__icon-wrapper">
+                <img src="img/footer/phone-icon.svg" alt="Icon: phone" />
+              </div>
+              Tel (business hours) : 269 1500<br />Tel (hotline) Monday -
+              Saturday: 52&#8209;56&#8209;61&#8209;38 (08:00 am – 20:00 pm)<br />Tel
+              (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+            </li>
+            <li class="footer__item footer__item--indent">
+              <div class="footer__icon-wrapper">
+                <img src="img/footer/mail-icon.svg" alt="Icon: mail" />
+              </div>
+              cherly.lawson@example.com
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer__contact-details -->
+        <div class="footer__contact-form">
+          <h3 class="footer__title footer__title--indent">
+            Send us a message
+          </h3>
+          <form action="send.php" method="POST" class="footer__form">
+            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" /><input type="tel"
+              class="input footer__input" placeholder="Phone Number*" name="phone" />
+            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+            <button type="submit" class="button footer__button">Send</button>
+            <span class="footer__info">* Required Fields</span>
+          </form>
+        </div>
+        <!-- /.footer-contact__form -->
+      </div>
+      <!-- /.footer-wrapper -->
+      <div class="footer-bottom">
+        <div class="footer-bottom__text">
+          <span class="footer-bottom__item">Disclaimer</span>
+          <span class="footer-bottom__item">Conditions of use</span>
+          <span class="footer-bottom__item">Cancellation policy</span>
+        </div>
+        <!-- /.footer-bottom__text -->
+        <img src="img/footer/pay.png" alt="Icons: pay" class="footer-bottom__icons" />
+      </div>
+      <!-- /.footer-bottom -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
