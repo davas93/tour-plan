@@ -149,6 +149,7 @@ $(".form").each(function () {
       },
       phone: {
         required: "Please specify your phone number",
+        minlength: "wrong number dialed",
       },
     },
   });
