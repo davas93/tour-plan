@@ -122,3 +122,34 @@ $(document).keydown(function (e) {
     closeModal(event);
   }
 });
+$(document).mouseup(function (e) {
+  // событие клика по веб-документу
+  var div = $(".modal__dialog"); // тут записываем в переменную элемент
+  if (
+    !div.is(e.target) && // если клик был не по нашему блоку
+    div.has(e.target).length === 0
+  ) {
+    // и не по его дочерним элементам
+    closeModal(event); // вызываем функцию скрытия
+  }
+});
+
+//Валидация форм
+$(".form").each(function () {
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "Name must be at least 2 letters long",
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+      phone: {
+        required: "Please specify your phone number",
+      },
+    },
+  });
+});

@@ -645,6 +645,7 @@
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
+            required
           />
           <button type="submit" class="button subscribe__button">Send</button>
         </form>
@@ -1119,19 +1120,21 @@ quest"
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a href="https://www.facebook.com/Hilton/" class="footer__link"
                 ><img
                   src="img/footer/facebook-icon.svg"
                   alt="Icon: facebook"
                   class="footer__icon"
               /></a>
-              <a href="#" class="footer__link"
+              <a href="https://www.youtube.com/hilton" class="footer__link"
                 ><img
                   src="img/footer/youtube-icon.svg"
                   alt="Icon: youtube"
                   class="footer__icon"
               /></a>
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.instagram.com/hiltonhotels/?hl=ru"
+                class="footer__link"
                 ><img
                   src="img/footer/instagram-icon.svg"
                   alt="Icon: instagram"
@@ -1196,18 +1199,26 @@ quest"
             <h3 class="footer__title footer__title--indent">
               Send us a message
             </h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              /><input
-                type="tel"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 class="footer__message"
                 placeholder="Message"
@@ -1247,23 +1258,27 @@ quest"
         <h3 class="modal__title modal__title--indent">
           booking
         </h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           /><input
             type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
           <input
-            type="tel"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="mail"
+            required
           />
           <textarea
             class="modal__message"
@@ -1287,23 +1302,27 @@ quest"
         <h3 class="modal__title modal__title--indent">
           Send us a feedback
         </h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           /><input
             type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
           <input
-            type="tel"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="mail"
+            required
           />
           <textarea
             class="modal__message"
@@ -1320,6 +1339,7 @@ quest"
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.5.0.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
