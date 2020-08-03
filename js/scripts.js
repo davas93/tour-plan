@@ -154,6 +154,4 @@ $(".form").each(function () {
   });
 });
 //Маска для телефона
-$(function () {
-  $('input[name|="phone"]').mask("+7(999) 999-9999");
-});
+$('input[name|="phone"]').mask("+7(999) 999-9999");
