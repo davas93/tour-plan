@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://api-maps.yandex.ru/2.1/?apikey=4168c4a5-41dc-41b6-83e1-e8b967b7959d&lang=ru_RU"></script>
     <title>Best Tour Plan - Hotel Booking</title>
@@ -16,7 +17,7 @@
     <header class="navbar navbar--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo" data-aos="fade-right">
             <img
               src="img/navbar/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -24,7 +25,7 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search" data-aos="fade-down">
             <input
               type="text"
               class="search__input"
@@ -35,7 +36,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user" data-aos="fade-left">
             <img
               src="img/navbar/user-avatar.jpg"
               alt="avatar: Nathan"
@@ -300,10 +301,10 @@
       <!-- /.container -->
     </section>
     <section class="packages">
-      <h2 class="packages__title">Other Packages</h2>
+      <h2 class="packages__title" data-aos="fade-up">Other Packages</h2>
       <div class="container">
         <div class="packages-wrapper">
-          <div class="package">
+          <div class="package" data-aos="fade-up" data-aos-delay="350">
             <div class="package__image">
               <img
                 src="img/packages/package-1.jpg"
@@ -367,7 +368,7 @@
             <span class="offer package__offer">Flash Offer</span>
           </div>
           <!-- /.package -->
-          <div class="package">
+          <div class="package" data-aos="fade-up" data-aos-delay="400">
             <div class="package__image">
               <img
                 src="img/packages/package-2.jpg"
@@ -431,7 +432,7 @@
             <span class="offer package__offer">Flash Offer</span>
           </div>
           <!-- /.package -->
-          <div class="package">
+          <div class="package" data-aos="fade-up" data-aos-delay="450">
             <div class="package__image">
               <img
                 src="img/packages/package-3.jpg"
@@ -495,7 +496,7 @@
             <span class="offer package__offer">Flash Offer</span>
           </div>
           <!-- /.package -->
-          <div class="package">
+          <div class="package" data-aos="fade-up" data-aos-delay="500">
             <div class="package__image">
               <img
                 src="img/packages/package-4.jpg"
@@ -559,7 +560,7 @@
             <span class="offer package__offer">Flash Offer</span>
           </div>
           <!-- /.package -->
-          <div class="package">
+          <div class="package" data-aos="fade-up" data-aos-delay="550">
             <div class="package__image">
               <img
                 src="img/packages/package-5.jpg"
@@ -630,7 +631,7 @@
     </section>
     <section class="newsletter">
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title">
+        <h2 class="newsletter-title" data-aos="fade-right">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -639,6 +640,7 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe form"
+          data-aos="fade-left"
         >
           <input
             type="email"
@@ -654,10 +656,10 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="section-title reviews__title">
+        <h2 class="section-title reviews__title" data-aos="fade-down">
           What people thinks about us
         </h2>
-        <div class="swiper-container reviews-slider">
+        <div class="swiper-container reviews-slider" data-aos="fade-up">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -1000,9 +1002,9 @@
     </section>
     <section class="activities">
       <div class="container">
-        <h2 class="activities__title">Other Activities</h2>
+        <h2 class="activities__title" data-aos="fade-down">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-right">
             <img
               src="img/activities/activities-1.jpg"
               alt="The curious corner 
@@ -1013,7 +1015,11 @@ of chamarel"
             <button class="button card__button">Book Now</button>
           </div>
           <!-- /.card activities__card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
             <img
               src="img/activities/activities-2.jpg"
               alt="Gymkhana club golf
@@ -1024,7 +1030,11 @@ course"
             <button class="button card__button">Book Now</button>
           </div>
           <!-- /.card activities__card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
             <img
               src="img/activities/activities-3.jpg"
               alt="Tamarind falls hiking
@@ -1037,7 +1047,11 @@ trip - full day"
             <button class="button card__button">Book Now</button>
           </div>
           <!-- /.card activities__card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
             <img
               src="img/activities/activities-4.jpg"
               alt="The blue marine discovery
@@ -1344,6 +1358,7 @@ quest"
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
