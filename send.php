@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $name = isset($_POST['name']) ? $_POST['name'] : null;
 $phone = isset($_POST['phone']) ? $_POST['phone'] : null;
 $message = isset($_POST['message']) ? $_POST['message'] : null;
+$mail = isset($_POST['mail']) ? $_POST['mail'] : null;
 // отправка данных на подписку
 $email = isset($_POST['email']) ? $_POST['email'] : null;
 
@@ -17,6 +18,7 @@ if (null === $email) {
 	$body = "
 	<h2>Новое обращение</h2>
 	<b>Имя:</b> $name<br>
+	<b>Почта:</b> $mail<br>
 	<b>Телефон:</b> $phone<br><br>
 	<b>Сообщение:</b><br>$message
 	";
@@ -30,7 +32,6 @@ if (null === $email) {
 	Благодарим Вас за подписку на рассылку свежих новостей!
 	";
 }
-
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
