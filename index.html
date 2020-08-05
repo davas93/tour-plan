@@ -7,10 +7,10 @@
       href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,600;0,700;1,600&family=Nunito:ital,wght@0,400;0,600;0,800;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=4168c4a5-41dc-41b6-83e1-e8b967b7959d&lang=ru_RU"></script>
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
   <body>
@@ -121,11 +121,7 @@
               Free
             </p>
           </div>
-          <div
-            data-toggle="modal"
-            data-href="#rating-modal"
-            class="rating hotel-info__rating"
-          >
+          <div class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter"
               >4.5/<span class="rating_small">5</span></span
@@ -291,7 +287,16 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div id="map" class="map"></div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.5129796528504!2d98.29571339458224!3d7.891077114127553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1596562245903!5m2!1sru!2sru"
+                class="map__google"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
             <!-- /.map -->
           </div>
           <!-- /.booking-wrap -->
@@ -631,7 +636,7 @@
     </section>
     <section class="newsletter">
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title" data-aos="fade-right">
+        <h2 class="newsletter-title" data-aos="fade-down">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -640,7 +645,7 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe form"
-          data-aos="fade-left"
+          data-aos="fade-up"
         >
           <input
             type="email"
@@ -1011,8 +1016,14 @@
 of chamarel"
               class="activities__image"
             />
-            <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="button card__button">Book Now</button>
+            <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
+            <button
+              class="button card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card activities__card -->
           <div
@@ -1027,7 +1038,13 @@ course"
               class="activities__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="button card__button">Book Now</button>
+            <button
+              class="button card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card activities__card -->
           <div
@@ -1044,7 +1061,13 @@ trip - full day"
             <h3 class="card__title">
               Tamarind falls hiking trip&nbsp;- full day
             </h3>
-            <button class="button card__button">Book Now</button>
+            <button
+              class="button card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card activities__card -->
           <div
@@ -1059,7 +1082,13 @@ quest"
               class="activities__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="button card__button">Book Now</button>
+            <button
+              class="button card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card activities__card -->
         </div>
@@ -1196,15 +1225,37 @@ quest"
                 <div class="footer__icon-wrapper">
                   <img src="img/footer/phone-icon.svg" alt="Icon: phone" />
                 </div>
-                Tel (business hours) : 269 1500<br />Tel (hotline) Monday -
-                Saturday: 52&#8209;56&#8209;61&#8209;38 (08:00 am – 20:00 pm)<br />Tel
-                (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__item-wrapper">
+                  <span class="footer__item-phone"
+                    >Tel (business hours) :
+                    <a class="footer__link-phone" href="tel:2691500"
+                      >269 1500</a
+                    ></span
+                  ><span class="footer__item-phone"
+                    >Tel (hotline) Monday - Saturday:
+                    <a class="footer__link-phone" href="tel:52566138"
+                      >52&#8209;56&#8209;61&#8209;38</a
+                    >
+                    (08:00 am – 20:00 pm)</span
+                  >
+                  <span class="footer__item-phone"
+                    >Tel (hotline) Sunday:
+                    <a class="footer__link-phone" href="tel:52566138"
+                      >52-56-61-38</a
+                    >
+                    (08:00 am – 14:00 pm)</span
+                  >
+                </div>
               </li>
               <li class="footer__item footer__item--indent">
                 <div class="footer__icon-wrapper">
                   <img src="img/footer/mail-icon.svg" alt="Icon: mail" />
                 </div>
-                cherly.lawson@example.com
+                <a
+                  class="footer__link-mail"
+                  href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -1308,54 +1359,8 @@ quest"
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-    <div class="modal" id="rating-modal">
-      <div class="modal__overlay"></div>
-      <!-- /.modal__overlay -->
-      <div class="modal__dialog">
-        <a href="#" class="modal__close">
-          <img src="img/modal/close.svg" alt="icon: close" />
-        </a>
-        <h3 class="modal__title modal__title--indent">
-          Send us a feedback
-        </h3>
-        <form action="send.php" method="POST" class="modal__form form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Your Full Name*"
-            name="name"
-            required
-            minlength="2"
-          /><input
-            type="tel"
-            class="input modal__input"
-            placeholder="Phone Number*"
-            name="phone"
-            required
-            minlength="16"
-          />
-          <input
-            type="email"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-          />
-          <textarea
-            class="modal__message"
-            placeholder="Message"
-            name="message"
-          ></textarea>
-          <button type="submit" class="button modal__button">Send</button>
-          <span class="modal__info">* Required Fields</span>
-        </form>
-      </div>
-      <!-- /.modal__dialog -->
-    </div>
-    <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.5.0.min.js"></script>
-    <script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/aos.js"></script>

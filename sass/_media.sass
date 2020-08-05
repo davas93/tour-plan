@@ -36,6 +36,9 @@
   .navbar
     &-top
       padding: 30px 0
+    &-bottom
+      .container
+        max-width: 87%
     &__search
       margin: auto
     &-menu
@@ -50,20 +53,40 @@
   .booking-wrap
     width: 100%
     flex-direction: row
+  .newsletter
+    padding-top: 70px
+    padding-bottom: 55px
   .reviews
+    padding-bottom: 40px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
     &-slider
       &__item
         max-width: 580px
+        padding-left: 65px
+        padding-right: 65px
+      &__button
+        top: 45%
+        &--prev
+          left: 5px
+        &--next
+          right: 5px
   .activities
-    padding-bottom: 70px
+    padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
     &__card
       width: 340px
       height: 255px
       margin-bottom: 20px
-  .packages-wrapper
-    grid-template: 1fr 1fr 1fr / 1fr 1fr
+  .packages
+    &__title
+      font-size: 30px
+      line-height: 38px
+    &-wrapper
+      grid-template: 1fr 1fr 1fr / 1fr 1fr
   .package
     &:first-child
       grid-column: 1 / 3
@@ -71,11 +94,11 @@
     padding: 73px 0 33px 0
     &-wrapper
       grid-template-columns: 1fr 1fr 1fr 20% 1fr 1fr
-      grid-row-gap: 40px
+      grid-row-gap: 60px
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
-      width: 104px
+      width: 95px
     &__social
       &-network
         grid-row: 1 / 2
@@ -88,6 +111,8 @@
       grid-column: span 2
     &__legal
       grid-column: span 2
+    &__form
+      width: 539px
     &__contact
       &-details
         grid-row-start: 3
@@ -98,7 +123,7 @@
     &-bottom
       display: flex
       justify-content: space-between
-      padding-top: 80px
+      padding-top: 50px
       &__text
         width: 283px
         margin-top: 10px
@@ -256,6 +281,8 @@
     &__input
       &-group
         flex-basis: 100%
+    &__form
+      width: 100%
 
 //Адаптив для экранов 576
 @media ( max-width: 576px)
@@ -330,12 +357,20 @@
 //Адаптив для экранов 480
 @media ( max-width: 480px)
   .hotel
+    &-info
+      padding-bottom: 30px
     &-slider
       height: 179px
+  .navbar
+    &-top
+      padding-top: 20px
+  .breadcrumb
+    &-list
+      padding-top: 85px
   .map
     height: 172px
   .newsletter
-    padding: 76px 0 83px 0
+    padding: 60px 0 30px 0
     &-title
       font-weight: 300
       font-size: 20px
@@ -344,6 +379,8 @@
         font-weight: 600
         font-size: 30px
         line-height: 38px
+      &__subscribe
+        margin-top: 0
   .subscribe
     width: 100%
   .reviews
@@ -354,6 +391,12 @@
       margin-bottom: 42px
       font-size: 18px
       line-height: 23px
+    &-slider
+      &__item
+        padding-left: 38px
+        padding-right: 38px
+      &__text
+        text-align: left
   .packages
     padding-top: 0
     &__title
@@ -370,6 +413,9 @@
           padding-left: 21px
         &__image
           max-height: 250px
+  .activities
+    &__title
+      margin-top: 0
   .modal
     &__dialog
       width: 90%
